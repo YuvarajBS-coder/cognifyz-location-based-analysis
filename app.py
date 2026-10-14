@@ -5,7 +5,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Restaurant Location Intelligence", page_icon="📍", layout="wide")
 
-DATA_PATH = Path(__file__).parent / "data" / "Dataset.csv"
+DATA_PATH = Path(__file__).parent / "Dataset.csv"
 
 @st.cache_data
 def load_data(path: str) -> pd.DataFrame:
